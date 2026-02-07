@@ -106,10 +106,12 @@ app.use("/api/messages", messageRoutes)
 
 // ========== SERVE STATIC FILES ==========
 if (process.env.NODE_ENV === "production") {
-	app.use(express.static(path.join(__dirname, "../frontend/dist")))
+	const distPath = path.join(__dirname, "../frontend/dist")
 
-	app.get("(.*)", (req, res) => {
-		res.sendFile(path.join(__dirname, "../frontend/dist/index.html"))
+	app.use(express.static(distPath))
+
+	app.use((req, res) => {
+		res.sendFile(path.join(distPath, "index.html"))
 	})
 }
 
