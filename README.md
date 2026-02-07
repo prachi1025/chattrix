@@ -80,5 +80,9 @@ A **real-time chat application** built with **React, Node.js, Express, MongoDB, 
 
 ## 🚀 Deployment
 
-This project is currently under development and is **not yet deployed**.  
-I am actively working on deploying it, and once it's live, the deployment link will be added here. Stay tuned! 🚀
+✅ **Successfully Deployed**
+
+The application is live and fully functional with Google OAuth authentication and real-time chat support.
+
+🔗 **Live Application:**  
+https://chattrix-ytfe.onrender.com
